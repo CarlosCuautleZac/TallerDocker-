@@ -1,5 +1,9 @@
+using Microsoft.EntityFrameworkCore;
+using Models.Db;
 using Services.Implementations;
 using Services.Interfaces;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +14,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<IUserService, UserService>();
+
+var connectionString = builder.Configuration.GetConnectionString("UserAPIDb");
+builder.Services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(connectionString));
 
 var app = builder.Build();
 
