@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  userapi:
+    image: ${DOCKER_REGISTRY-}userapi
+    build:
+      context: .
+      dockerfile: UserApi/Dockerfile
+    environment:
+      ConnectionStrings__UserAPIDb: "Server=host.docker.internal,1433;User Id=appadmin;Password=appadmin;Database=UserAPIDb"
+      AppInfo__Name: "UserAPI"
+      AppInfo__Version: 1

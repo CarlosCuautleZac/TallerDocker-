@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Servic
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database", "Database\Database.sqlproj", "{C1D8A188-D440-4AEF-BE69-794C67A63130}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{30000BFE-A789-440D-9544-5B299A119DFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{C1D8A188-D440-4AEF-BE69-794C67A63130}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1D8A188-D440-4AEF-BE69-794C67A63130}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C1D8A188-D440-4AEF-BE69-794C67A63130}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{30000BFE-A789-440D-9544-5B299A119DFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30000BFE-A789-440D-9544-5B299A119DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30000BFE-A789-440D-9544-5B299A119DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30000BFE-A789-440D-9544-5B299A119DFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
