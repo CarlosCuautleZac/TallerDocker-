@@ -7,6 +7,6 @@ services:
       context: .
       dockerfile: UserApi/Dockerfile
     environment:
-      ConnectionStrings__UserAPIDb: "Server=host.docker.internal,1433;User Id=appadmin;Password=appadmin;Database=UserAPIDb"
+      ConnectionStrings__UserAPIDb: "Server=host.docker.internal,1433;User Id=sa;Password=admin;Database=UserAPIDb"
       AppInfo__Name: "UserAPI"
       AppInfo__Version: 1
